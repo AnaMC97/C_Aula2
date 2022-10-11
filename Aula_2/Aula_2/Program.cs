@@ -34,13 +34,13 @@ namespace Aula_2
             //Exercicio 3.5//
             int[] idades =  new int[5]; //{ 52, 18, 20, 30, 25 };
 
-            for (int i = 0; i < idades.Length; i++)
+            for (int i = 0; i < idades.Length; i++) // inserir idades
             {
                 Console.WriteLine("Introduza a idade aluno: ");
                 idades[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Array.Sort(idades);
-            Console.WriteLine(idades[0]);
+            Array.Sort(idades); //ordenação do array
+            Console.WriteLine("A pessoa mais nova tem {0} anos",idades[0]); //pessoa mais nova
             Console.WriteLine(idades[idades.Length-1]-20); //pessoa mais velha
 
 
